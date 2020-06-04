@@ -1,0 +1,60 @@
+header.header {
+    .header {
+        background-color: $background-light;
+        box-shadow: 0 6px 8px 0 rgba(38, 36, 36, 0.07);
+        display: flex;
+        justify-content: space-between;
+        min-height: 80px;
+        align-items: center;
+        &::before {
+            content: "";
+            height: 6px;
+            z-index: 3;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            display: block;
+            background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+        }
+        img {
+            margin: 0 20px;
+            &.logo {
+                padding-bottom: 7px;
+            }
+        }
+    }
+}
+.homeBanner {
+    min-height: 76vh;
+    .homeBanner--image {
+        background-size: cover;
+        background-position: 50%;
+    }
+    .blurBackground {
+        width: 55%;
+        background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.6) 60%,
+            rgba(255, 255, 255, 0) 100%
+        );
+        .title {
+            padding-left: 15%;
+            padding-top: 10%;
+            color: $softBlack;
+            font-family: $bold;
+        }
+        form {
+            width: 40%;
+            border-radius: 5px;
+            display: flex;
+            padding: 10%;
+            align-items: center;
+            flex-direction: column;
+            input {
+                padding: 10px 5px;
+                margin: 3px 0;
+                border: none;
+            }
+        }
+    }
+}
