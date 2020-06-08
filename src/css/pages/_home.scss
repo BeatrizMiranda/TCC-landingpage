@@ -43,17 +43,48 @@ header.header {
             color: $softBlack;
             font-family: $bold;
         }
+    }
+}
+.formback--color {
+    background: linear-gradient(90deg, #6a82fb9c, #fc5c7da6);
+    .image-phone {
+        max-width: 280px;
+        margin: 0 auto;
+        top: -40px;
+        left: 20%;
+    }
+    .formContainer {
+        padding: 10% 0;
         form {
-            width: 40%;
-            border-radius: 5px;
             display: flex;
-            padding: 10%;
             align-items: center;
             flex-direction: column;
-            input {
+            input,
+            select {
                 padding: 10px 5px;
                 margin: 3px 0;
                 border: none;
+                border-radius: 2px;
+                width: 350px;
+                background-color: none !important;
+            }
+        }
+    }
+}
+
+.threeFeatures {
+    margin: 40px 0;
+    .threeFeatures--icons {
+        justify-content: center;
+        margin: 70px 0 50px 0;
+        .iconContainer {
+            display: flex;
+            padding: 40px;
+            justify-content: center;
+            flex-direction: column;
+            .icons {
+                margin: 0 auto;
+                width: 100px;
             }
         }
     }
