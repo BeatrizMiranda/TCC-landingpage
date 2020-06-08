@@ -128,7 +128,26 @@ function App() {
                     </div>
                 </div>
             </div>
-            <footer></footer>
+            <footer>
+                <div className="downloadIcons flex items-center justify-around">
+                    <div className="flex items-center">
+                        <img
+                            src={app_store}
+                            alt="Faça Download do app na app store"
+                            width="50px"
+                        />{" "}
+                        Download na App Store
+                    </div>
+                    <div className="flex items-center">
+                        <img
+                            src={google_play}
+                            alt="Faça Download do app na google play"
+                            width="50px"
+                        />
+                        Download na Play Store
+                    </div>
+                </div>
+            </footer>
         </div>
     );
 }
