@@ -1,29 +1,3 @@
-header.header {
-    .header {
-        background-color: $background-light;
-        box-shadow: 0 6px 8px 0 rgba(38, 36, 36, 0.07);
-        display: flex;
-        justify-content: space-between;
-        min-height: 80px;
-        align-items: center;
-        &::before {
-            content: "";
-            height: 6px;
-            z-index: 3;
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-            display: block;
-            background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
-        }
-        img {
-            margin: 0 20px;
-            &.logo {
-                padding-bottom: 7px;
-            }
-        }
-    }
-}
 .homeBanner {
     min-height: 76vh;
     .homeBanner--image {
@@ -71,7 +45,6 @@ header.header {
         }
     }
 }
-
 .threeFeatures {
     margin: 40px 0;
     .threeFeatures--icons {
@@ -87,5 +60,17 @@ header.header {
                 width: 100px;
             }
         }
+    }
+}
+.scrollTop {
+    height: 35px;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    opacity: 1;
+    transition: all 0.4s;
+    &.init {
+        opacity: 0;
+        bottom: -40px;
     }
 }

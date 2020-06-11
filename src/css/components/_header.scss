@@ -1,0 +1,43 @@
+header.header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    &.scroll {
+        .header {
+            height: 60px;
+            img {
+                width: 50px !important;
+            }
+            .downloadIcons img {
+                width: 40px !important;
+            }
+        }
+    }
+    .header {
+        transition: height 0.5s;
+        background-color: $background-light;
+        box-shadow: 0 6px 8px 0 rgba(38, 36, 36, 0.07);
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        align-items: center;
+        &::before {
+            content: "";
+            height: 6px;
+            z-index: 3;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            display: block;
+            background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+        }
+        img {
+            transition: width 0.5s;
+            margin: 0 20px;
+            &.logo {
+                padding-bottom: 7px;
+            }
+        }
+    }
+}
